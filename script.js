@@ -15,7 +15,7 @@ function generatePassword(){
     var passwordLength = parseInt(prompt("How many characters should your password have? \nPlease choose a number between 8 and 128!"));
     console.log("length chosen was " + passwordLength);
     
-    // Checking to see if answer is within the criteria.
+    // check to see if answer is within the criteria.
     if (passwordLength === null){}
     
     else if (isNaN(parseInt(passwordLength)) || isNaN(passwordLength) || parseInt(passwordLength) < 8 || parseInt(passwordLength) > 128){
@@ -51,7 +51,7 @@ function generatePassword(){
     
       if (chars != ''){
     
-    // shuffles all of the characters, 
+    // shuffles all of the characters 
       function shuffle(Char_shuffle){
       
       Char_shuffle = Char_shuffle.split('');
@@ -64,7 +64,7 @@ function generatePassword(){
       Char_shuffle[j] = tmp;
       }
     
-    // join method allows the concantination of all elements of an array and returns a new string   
+    // join method 
       return Char_shuffle.join("");
           
       }
@@ -97,5 +97,4 @@ function generatePassword(){
       var passwordText = document.querySelector("#password");
     
       passwordText.value = password;
-    
     }
